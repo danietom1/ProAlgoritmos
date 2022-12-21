@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03c544ec-69bd-43ce-9bdc-05eb0439b2cf" name="Changes" comment="">
+    <list default="true" id="03c544ec-69bd-43ce-9bdc-05eb0439b2cf" name="Changes" comment="Version estable v0.2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProAlgo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProAlgo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,55 +53,45 @@
       <updated>1670987292247</updated>
       <workItem from="1670987293612" duration="7432000" />
       <workItem from="1671586915424" duration="6599000" />
-      <workItem from="1671594212628" duration="19806000" />
+      <workItem from="1671594212628" duration="23489000" />
     </task>
+    <task id="LOCAL-00001" summary="Version estable v0.2">
+      <created>1671614458820</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671614458820</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Version estable v0.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version estable v0.2" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ProAlgo.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ProAlgo.java</url>
-          <line>374</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <condition expression="Ruta == 107" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/ProAlgo.java</url>
-          <line>56</line>
+          <line>64</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ProAlgo.java</url>
-          <line>334</line>
-          <option name="timeStamp" value="42" />
+          <line>31</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ProAlgo.java</url>
-          <line>326</line>
-          <option name="timeStamp" value="43" />
+          <line>394</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="Ruta" />
-        <watch expression="ProAlgo.Numero_Nombre" />
-        <watch expression="arista" />
-        <watch expression="VerticeOrigen" />
-        <watch expression="aristas" />
-        <watch expression="Numero_Nombre.get(VerticeOrigen)" language="JAVA" />
-        <watch expression="Numero_Nombre.get(VerticeDestino)" language="JAVA" />
-        <watch expression="d[verticeTemp.getValue()]+vert[1]+TransTime" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

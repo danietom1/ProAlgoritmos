@@ -6,6 +6,12 @@ public class ProAlgo {
 
     public static Map<String, Integer> Nombre_Numero = new HashMap<>();
     public static Map<Integer, String> Numero_Nombre = new HashMap<>();
+    public static Stack<Number> pilaEstaciones = new Stack<Number>();
+    public static Stack<Number> pilaRutas = new Stack<Number>();
+    public static int[] d;
+    public static int[] pi;
+    public static String[] state;
+    public static int[] Rutas;
 
     public static void main(String[] args) {
         String FilePath = "src/Test.txt";
@@ -22,6 +28,8 @@ public class ProAlgo {
         System.out.println();
 
         Dijsktra(grafo,"A");
+
+        reconstruirRuta("F");
     }
 
 
@@ -296,24 +304,24 @@ public class ProAlgo {
         int n = grafo.length;
 
         //Arreglo Delta
-        int[] d = new int[n];
+        d = new int[n];
         for (int i = 0; i < d.length; i++) {
             d[i] = Integer.MAX_VALUE;
         }
         d[origen] = 0;
 
         //Arreglo Pi
-        int[] pi = new int[n];
+        pi = new int[n];
 
         //Arreglo estado
-        String[] state = new String[n];
+        state = new String[n];
         for (int i = 0; i < state.length; i++) {
             state[i] = "N";
         }
         state[origen] = "D";
 
         //Arreglo rutas
-        int[] Rutas = new int[n];
+        Rutas = new int[n];
 
 
         //Cola de prioridad
@@ -380,6 +388,31 @@ public class ProAlgo {
         for (Object obj:Rutas
         ) {
             System.out.print(obj+"   ");
+        }
+    }
+
+    private static void reconstruirRuta(String dest){
+        int destino = Nombre_Numero.get(dest);
+
+        while (true){
+            pilaEstaciones.add(destino);
+            pilaRutas.add(Rutas[destino]);
+            destino = pi[destino];
+            if (destino == 0) {
+                pilaEstaciones.add(destino);
+                break;
+            }
+        }
+        System.out.println();
+        System.out.println();
+        System.out.println("Ruta Final");
+        while(!pilaEstaciones.isEmpty()){
+            System.out.print(Numero_Nombre.get(pilaEstaciones.pop())+" ");
+        }
+        System.out.println();
+        System.out.print("  ");
+        while (!pilaRutas.isEmpty()){
+            System.out.print(pilaRutas.pop()+" ");
         }
     }
 }
