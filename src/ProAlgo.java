@@ -8,6 +8,7 @@ public class ProAlgo {
     public static Map<Integer, String> Numero_Nombre = new HashMap<>();
     public static Stack<Number> pilaEstaciones = new Stack<Number>();
     public static Stack<Number> pilaRutas = new Stack<Number>();
+    public static Stack<Number> pilaDeltas = new Stack<Number>();
     public static int[] d;
     public static int[] pi;
     public static String[] state;
@@ -394,26 +395,38 @@ public class ProAlgo {
     private static void reconstruirRuta(String dest){
         int destino = Nombre_Numero.get(dest);
 
-        while (true){
-            pilaEstaciones.add(destino);
-            pilaRutas.add(Rutas[destino]);
-            destino = pi[destino];
-            if (destino == 0) {
+        try{
+            while (true){
                 pilaEstaciones.add(destino);
-                break;
+                pilaRutas.add(Rutas[destino]);
+                if(d[destino]==Integer.MAX_VALUE) throw new Exception("Exception message");;
+                destino = pi[destino];
+                if (destino == 0) {
+                    pilaEstaciones.add(destino);
+                    break;
+                }
             }
+            System.out.println();
+            System.out.println();
+            System.out.println("Ruta Final");
+            while(!pilaEstaciones.isEmpty()){
+                System.out.print(Numero_Nombre.get(pilaEstaciones.pop())+" ");
+            }
+            System.out.println();
+            System.out.print("  ");
+            while (!pilaRutas.isEmpty()){
+                System.out.print(pilaRutas.pop()+" ");
+            }
+
+        } catch (Exception e) {
+            System.out.println();
+            System.out.println();
+            System.out.println("Ruta Final");
+            System.out.println("No hay ruta disponible");
+            //throw new RuntimeException(e);
+
         }
-        System.out.println();
-        System.out.println();
-        System.out.println("Ruta Final");
-        while(!pilaEstaciones.isEmpty()){
-            System.out.print(Numero_Nombre.get(pilaEstaciones.pop())+" ");
-        }
-        System.out.println();
-        System.out.print("  ");
-        while (!pilaRutas.isEmpty()){
-            System.out.print(pilaRutas.pop()+" ");
-        }
+
     }
 }
 

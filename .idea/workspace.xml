@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03c544ec-69bd-43ce-9bdc-05eb0439b2cf" name="Changes" comment="Version estable v0.2">
+    <list default="true" id="03c544ec-69bd-43ce-9bdc-05eb0439b2cf" name="Changes" comment="Version estable v0.3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProAlgo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProAlgo.java" afterDir="false" />
     </list>
@@ -53,7 +53,7 @@
       <updated>1670987292247</updated>
       <workItem from="1670987293612" duration="7432000" />
       <workItem from="1671586915424" duration="6599000" />
-      <workItem from="1671594212628" duration="23489000" />
+      <workItem from="1671594212628" duration="24679000" />
     </task>
     <task id="LOCAL-00001" summary="Version estable v0.2">
       <created>1671614458820</created>
@@ -62,7 +62,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671614458820</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Version estable v0.3">
+      <created>1671617930709</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671617930709</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,7 +77,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Version estable v0.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version estable v0.2" />
+    <MESSAGE value="Version estable v0.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version estable v0.3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -78,17 +86,17 @@
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="Ruta == 107" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/ProAlgo.java</url>
-          <line>64</line>
+          <line>65</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ProAlgo.java</url>
-          <line>31</line>
+          <line>32</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ProAlgo.java</url>
-          <line>394</line>
+          <line>395</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
